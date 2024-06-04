@@ -1,0 +1,22 @@
+server:
+  port: 8072
+spring:
+  application:
+    name: replier-app
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    packages:
+      trust-all: true
+  jms:
+    queue-name: "queue.st02"
+
+logging:
+  level:
+    root: error
+    com:
+      tananushka:
+        mom:
+          replierapp:
+            replier: info
